@@ -1,13 +1,26 @@
 # 4 Spark Core y SQL
 
+1. [Enlaces ](#schema1)
+2. [Tipo de datos con los que trabajamos, RDD](#schema2)
+3. [Operaciones a un RDD](#schema3)
+<hr>
+
+<a name="schema1"></a>
+
+# 1. Componentes de Spark
+
+
 ![scala](./images/001.png)
 
 ![scala](./images/002.png)
 ![scala](./images/003.png)
 ![scala](./images/004.png)
 
+<hr>
 
-## Tipo de datos con los que trabajamos, RDD
+<a name="schema2"></a>
+
+# 2 .Tipo de datos con los que trabajamos, RDD
 ![scala](./images/005.png)
 ![scala](./images/006.png)
 
@@ -23,22 +36,26 @@ Resiliente porque estan alojados los mismos datos en varios nodos por lo cual si
 
 ![scala](./images/009.png)
 
-## Operaciones a un RDD
-### Transformaciones
+<hr>
+
+<a name="schema3"></a>
+
+# 3. Operaciones a un RDD
+## -  Transformaciones
 
 ![scala](./images/010.png)
 ![scala](./images/011.png)
 
-Filter
+### Filter
 ![scala](./images/012.png)
-Map
+### Map
 ![scala](./images/013.png)
 
-Operaciones de conjuntos
+### Operaciones de conjuntos
 ![scala](./images/014.png)
 ![scala](./images/015.png)
 
-### Acciones
+## -  Acciones
 ![scala](./images/016.png)
 collect: Recogeme todos los datos que tengo en el RDD
 
@@ -53,7 +70,7 @@ saveAsTextFile: guardar el RDD filtrado o mapeado guardarlo como un archivo de t
 reduce: 
 ![scala](./images/017.png)
 
-### Caching 
+###  - Caching 
 
 Los datos se almacenan en caché automáticamente cada vez que se debe capturar un archivo desde una ubicación remota. Las lecturas sucesivas de los mismos datos se ejecutan de forma local, lo que resulta en una velocidad de lectura significativamente mejor.
 ![scala](./images/018.png)
@@ -65,7 +82,7 @@ También se pueden guardar los datos de forma serializada, ya que ocupan menos e
 
 ![scala](./images/019.png)
 
-### Pair RDD
+### - Pair RDD
 Es un RDD que contiene elementos clave-valor, se pueden hacer las mismas transformacione que con RDD normal.
 
 Nos interasa este tipo de datos por que Scala tiene varias transformaciones que trabajan con clave-valor.
