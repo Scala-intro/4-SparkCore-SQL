@@ -3,6 +3,7 @@
 1. [Enlaces ](#schema1)
 2. [Tipo de datos con los que trabajamos, RDD](#schema2)
 3. [Operaciones a un RDD](#schema3)
+4. [Spark SQL](#schema4)
 <hr>
 
 <a name="schema1"></a>
@@ -90,3 +91,35 @@ Nos interasa este tipo de datos por que Scala tiene varias transformaciones que 
 También se pueden hacer acciones de conjuntos.
 
 ![scala](./images/020.png)
+
+
+
+<hr>
+
+<a name="schema4"></a>
+
+# 4. Spark SQL
+![scala](./images/021.png)
+Datos en columnas
+![scala](./images/022.png)
+
+Dataset datos tipados
+![scala](./images/023.png)
+
+![scala](./images/024.png)
+
+La gran mayoría usan los dataset.
+![scala](./images/025.png)
+
+Trabajar con SQL
+![scala](./images/026.png)
+
+
+![scala](./images/027.png)
+![scala](./images/028.png)
+
+Trabajar con SQL
+![scala](./images/029.png)
+~~~scala
+val adultsDF = spark.SQL("SELECT * FROM people WHERE age > 17)
+~~~
