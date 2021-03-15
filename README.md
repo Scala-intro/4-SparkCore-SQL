@@ -52,3 +52,24 @@ saveAsTextFile: guardar el RDD filtrado o mapeado guardarlo como un archivo de t
 
 reduce: 
 ![scala](./images/017.png)
+
+### Caching 
+
+Los datos se almacenan en caché automáticamente cada vez que se debe capturar un archivo desde una ubicación remota. Las lecturas sucesivas de los mismos datos se ejecutan de forma local, lo que resulta en una velocidad de lectura significativamente mejor.
+![scala](./images/018.png)
+
+Donde guardamos la información siempre que se pueda hay que guardarlo en memoria, aunque podemos alternar entre memoria y disco. El disco como útlima opción.
+
+También se pueden guardar los datos de forma serializada, ya que ocupan menos espacio.
+
+
+![scala](./images/019.png)
+
+### Pair RDD
+Es un RDD que contiene elementos clave-valor, se pueden hacer las mismas transformacione que con RDD normal.
+
+Nos interasa este tipo de datos por que Scala tiene varias transformaciones que trabajan con clave-valor.
+
+También se pueden hacer acciones de conjuntos.
+
+![scala](./images/020.png)
